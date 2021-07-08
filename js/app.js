@@ -7,14 +7,15 @@ const bg = document.querySelector('#btn');
 bg.addEventListener('click', e => {
      if(e.target.value == 'activar')
      {
-          
+       document.querySelector("#contenido").classList.add('gb2');
+       document.querySelector("#bg").classList.add('gb');
          e.target.value = 'desactivar'
      }else{
          e.target.value = 'activar'
-         
+         document.querySelector("#contenido").classList.remove('gb2');
+         document.querySelector("#bg").classList.remove('gb');
      }
  })
-
 
 
 UI.formularioBuscar.addEventListener('submit', (e) => {
