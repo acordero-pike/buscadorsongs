@@ -1,6 +1,22 @@
 import { API } from './api.js';
 import * as UI from './interfaz.js';
 
+const bg = document.querySelector('#btn');
+
+
+bg.addEventListener('click', e => {
+     if(e.target.value == 'activar')
+     {
+          
+         e.target.value = 'desactivar'
+     }else{
+         e.target.value = 'activar'
+         
+     }
+ })
+
+
+
 UI.formularioBuscar.addEventListener('submit', (e) => {
      e.preventDefault();
 
